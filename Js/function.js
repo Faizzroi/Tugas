@@ -4,7 +4,12 @@ let kotak=[];
 kotak.push(panjang, lebar)
 console.log(kotak);
 
-const luasPersegi = (panjang=0 , lebar=0) => panjang*lebar
+// const luasPersegi = (panjang=0 , lebar=0) => panjang*lebar
+
+const luasPersegi = (panjang=0 , lebar=0) => {
+    const hasil=panjang*lebar
+    return document.write(`panjang=${panjang}cm <br>lebar=${lebar}cm <br>luas persegi= ${hasil}cm\u00B2 <br>`)
+}
 
 // const luasPersegi2 = (panjang, lebar) => {
 //     hasil = this[0] * this[1]
@@ -13,7 +18,7 @@ const luasPersegi = (panjang=0 , lebar=0) => panjang*lebar
 
 const volumeBalok = (panjang=0 , lebar=0, tinggi=0) => {
     const hasil=panjang*lebar*tinggi
-    return document.write(`panjang=${panjang} <br>lebar=${lebar} <br>tinggi=${tinggi} <br>volume balok= ${hasil}`)
+    return document.write(`<br>panjang=${panjang}cm <br>lebar=${lebar}cm <br>tinggi=${tinggi}cm <br>volume balok= ${hasil}cm\u00B3<br>`)
 }
 
 // console.log(kotak.luasPersegi2());
