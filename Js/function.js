@@ -13,8 +13,9 @@ const luasPersegi = (panjang=0 , lebar=0) => panjang*lebar
 
 const volumeBalok = (panjang=0 , lebar=0, tinggi=0) => {
     const hasil=panjang*lebar*tinggi
-    return document.write(`panjang:${panjang} lebar:${lebar} tinggi:${tinggi} Luas persegi panjang: ${hasil}`)
+    return document.write(`panjang=${panjang} <br>lebar=${lebar} <br>tinggi=${tinggi} <br>volume balok= ${hasil}`)
 }
 
 // console.log(kotak.luasPersegi2());
 console.log(luasPersegi(4,8));
+volumeBalok(4,8,3)
