@@ -77,9 +77,26 @@ function montor(a, b) {
     b()
 }
 
+function perbaiki(params) {
+    setTimeout(()=>{console.log(`memperbaiki motor di tempat servis`)},4000)
+}
+
+function mostor(a,b) {
+    a()
+    b()
+}
+
+function cuci(params) {
+    setTimeout(()=>{
+        console.log(` `),
+        console.log(`cuci motor`)},2000)
+    
+}
+
 function bensin(params) {
     console.log(`sisa bensin adalah ${bengsin} liter`);
 }
 
 montor(6, bensin)
 console.log(` `);
+mostor(perbaiki, cuci)
