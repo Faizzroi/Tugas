@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+         box-sizing: border-box;
+         font-family:Verdana, Geneva, Tahoma, sans-serif ;
+
+      }
+      body {
+        margin: 18px;
+        padding: 0;
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+        background-color: blueviolet;
+      }
+
+
+      .outerbox
+      {
+         max-height: 600px;
+         min-height: 210px;
+         border-radius: 45px;
+         padding: 30px;
+         gap: 20px;
+         display: flex;
+         background-color: white;
+         border: 1px solid black;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         /* overflow: hidden; */
+      }
+
+
+
+      .logo
+      {
+         display:grid;
+         place-items: left;
+         float: left;
+         height: auto;
+         width: max-content;
+      }
+      .logo h1
+      {
+         font-size: 50px;
+         font-weight: 900;
+         margin: 0;
+         /* margin-bottom: 11px; */
+         /* color: rgba(89, 51, 125, 0.881); */
+         color: black;
+         /* border: 3px solid blueviolet; */
+         border: 3px solid red;
+         padding: 8px 9px;
+         padding-bottom: 13px;
+      }
+      
+
+
+      .input-container
+      {
+         margin-top: 22px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 65%;
+         max-width: 60%;
+         gap: 10px;
+      }
+      .input-container div
+      {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 3px 6px;
+         gap: 10px;
+         border-radius: 10px;
+      }
+      .input-container > div
+      {
+         /* color: aliceblue;
+         background-color: blueviolet;
+         box-shadow: 2px 3px white, 5px 6px blueviolet; */   
+         color: white;
+         background-color: black;
+         box-shadow: 2px 3px white, 4px 6px red;
+      }
+      label
+      {
+         font-size: 18px;
+         font-weight: 400px;
+         display: inline;
+      }
+      .name-input
+      {
+         width: 85%;
+         justify-content: right !important;
+      }
+      .name-input input
+      {
+         min-width: 50%;
+         width: 100%;
+         border-radius: 6px;
+         border: none !important;
+      }
+      .name-input input:focus-visible 
+      {   
+         outline-color: rgba(0, 0, 0, 0.43) !important
+      }
+      .input-container button
+      {
+         max-width: 90px;
+         min-width: 85px;
+         min-height: 32px;
+         margin-inline: 50%;
+         margin-top: 4px;
+         border: 2px solid blueviolet ;
+         background-color: red;
+         /* color: blueviolet; */
+         color: aliceblue;
+         font-weight: 600;
+         border: none;
+         padding-bottom: 2px;
+         font-family:Verdana, Geneva, Tahoma, sans-serif !important ;
+         border-radius: 18px;
+      }
+
+
+      .data
+      {
+         margin-top: 30px;
+         height: 400px;
+         background-color: aliceblue;
+      }
+
+    </style>
+  </head>
+  <body>
+   <header class="outerbox">
+      <div class="logo">
+         <h1>Data Base</h1>
+      </div>
+      <div class="input-container">
+         <div>
+            <label for="">Nama:</label>
+            <div class="name-input">
+               <input type="text" name="" id="">
+            </div>
+         </div>
+         <div>
+            <label for="">No. Telp:</label>
+            <div class="name-input">
+               <input type="text" name="" id="">
+            </div>
+         </div>
+            <button type="submit">Submit</button>
+      </div>
+   </header>
+   <div class="data">
+
+   </div>
+    <script src="crud.js"></script>
+  </body>
+</html>
+
+   <!-- <div class="">
+      <label for="">Nama:</label>
+      <input type="text" name="" id="">
+      <button type="submit">Submit</button>
+   </div>
+   <div>
+      <label for="">No. Telp:</label>
+      <input type="text" name="" id="">
+      <button type="submit">Submit</button>
+   </div> -->
